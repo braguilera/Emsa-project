@@ -13,7 +13,7 @@ import Footer from './screens/Footer'
 function App() {
 
   return (
-    <main className='bg-slate-50 text-slate-700 flex flex-col overflow-hidden '>
+    <main className='bg-slate-50 m-0 p-0 w-full h-full text-slate-900 flex flex-col overflow-hidden '>
       <Nav/>
       <Home/>
       <Services/>

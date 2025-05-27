@@ -1,13 +1,14 @@
 {
-  "textPrimaryPart1":"En",
+  "textPrimaryPart1":"At",
   "textPrimaryPart1Highlighted":"EMSA",
-  "textPrimaryPart2":" brindamos ",
-  "textPrimaryPart2Highlighted":" servicios logísticos ",
-  "textPrimaryPart3":"  de calidad basados en una gestión integrada de personas, procesos y tecnologías. ",
-  "textSecondary":"Logística a la ",
-  "textSecondaryHighlighted":"medida",
-  "textSecondaryPart1":"de sus necesidades.",
-  "textThird":"Logística de ",
-  "textThirdHighlighted":"valor",
-  "textThirdPart1":"para su cadena de suministro."
+  "textPrimaryPart2":", we provide high-quality ",
+  "textPrimaryPart2Highlighted":"logistics services",
+  "textPrimaryPart3":"  based on an integrated management of ",
+  "textPrimaryPart4":"people, processes, and technologies.",
+  "textSecondary":"Logistics",
+  "textSecondaryHighlighted":" tailored ",
+  "textSecondaryPart1":"to your needs.",
+  "textThird":"",
+  "textThirdHighlighted":"Value-added ",
+  "textThirdPart1":"logistics for your supply chain."
 }
