@@ -1,10 +1,11 @@
 import React from 'react'
+import Title from '../components/utils/Title'
 
 const Services = () => {
   return (
-    <div>
-        Services
-    </div>
+    <section className='h-screen'>
+        <Title backgroundText={'Servicios'} frontText={'Nuestros Servicios'}></Title>
+    </section>
   )
 }
 
