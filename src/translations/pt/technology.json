@@ -1,1 +1,67 @@
-{}
+{
+    "backTitle":"Tecnologia",
+    "frontTitle":"Tecnologia Aplicada",
+    "description":"Nossas soluções logísticas são impulsionadas por tecnologia de ponta, otimizando cada etapa da cadeia de suprimentos.",
+    "technologies":[
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Gestão Integrada de Armazéns (WMS)",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Gestão Inteligente do Transporte (TMS)",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Planejamento e Controle de Frota",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Aplicativos Móveis de Rastreabilidade",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Painéis de Controle Personalizados",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Análises e Relatórios Inteligentes",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Alertas e Notificações em Tempo Real",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Software de Gestão Logística Integrado ao ERP",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"Rastreabilidade Avançada com RFID",
+            "img":""
+        },
+        {
+            "link":"https://www.quadrant.com.ar/",
+            "linktitle":"QUADRANT",
+            "title":"SOFTWARE DE DESENVOLVIMENTO",
+            "img":""
+        }       
+    ]
+}

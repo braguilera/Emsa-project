@@ -1,1 +1,67 @@
-{}
+{
+    "backTitle": "Servicios",
+    "frontTitle":"Nuestros Servicios",
+    "description":"Nos apasiona la Logística...¡Estamos para servirte!",
+    "services": [
+        {
+            "title": "ALMACENAMIENTO",
+            "description": "Depósitos en CABA y Zona Norte PBA",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "TRANSPORTE INTEGRAL. CARGAS GENERALES Y CARGAS IMO",
+            "description": "Alcance Nacional Planificación de rutas inteligente. Seguimiento en tiempo real",
+            "icon": "Truck"
+        },
+        {
+            "title": "DISTRIBUCIÓN CANAL MINORISTA",
+            "description": "Planificación de rutas. | Facturación y cobranzas | Seguimiento de entregas | Logística inversa | Gestión de flota",
+            "icon": "Truck"
+        },
+        {
+            "title": "DISTRIBUCIÓN CANAL MAYORISTA",
+            "description": "Cross-docking y/o preparación de pedidos desde nuestros CD´s, entrega consolidada",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "GESTIÓN DE INVENTARIO",
+            "description": "Monitoreo en tiempo real de su stock. FIFO | FEFO | LIFO",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "PREPARACIÓN DE PEDIDOS",
+            "description": "Picking y packing. Desconsolidación y consolidación. Minorista | Mayorista | E-commerce",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "TRAZABILIDAD TOTAL (QR/BARRAS/RFID)",
+            "description": "Etiquetado para identificación y seguimiento de la mercadería acorde a sus necesidades (QR | Barras | RFID)",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "GESTIÓN DIGITAL DE LA DOCUMENTACIÓN",
+            "description": "Agilización de procesos administrativos y reducción del uso de papel",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "PUNTUALIDAD",
+            "description": "Aplicaciones móviles y sistemas de gestión de entregas que optimizan los ruteos y garantizan puntualidad de las entregas",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "SEGUIMIENTO",
+            "description": "Seguimiento en tiempo real a través de plataforma web y aplicaciones móviles",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "FULFILLMENT / E-COMMERCE",
+            "description": "Integración con su e-commerce / Servicio de puerta a puerta",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "NUEVOS PROYECTOS Y OPERACIONES LOGÍSTICAS",
+            "description": "Desarrollo de nuevas operaciones a la medida de sus necesidades",
+            "icon": "Warehouse"
+        }
+    ]
+}

@@ -1,1 +1,67 @@
-{}
+{
+    "backTitle":"Technologie",
+    "frontTitle":"Angewandte Technologie",
+    "description":"Unsere Logistiklösungen werden durch modernste Technologie unterstützt und optimieren jede Phase der Lieferkette.",
+    "technologies":[
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"INTEGRALES LAGERMANAGEMENT (WMS)",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"INTELLIGENTES TRANSPORTMANAGEMENT (TMS)",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"FLOTTENPLANUNG UND -KONTROLLE",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"APLICACIONES MÓVILES DE TRAZMOBILE ANWENDUNGEN ZUR RÜCKVERFOLGBARKEITABILIDAD",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"INDIVIDUELL ANGEPASSTE DASHBOARDS",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"INTELLIGENTE ANALYSEN UND BERICHTE",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"ECHTZEIT-ALARM- UND BENACHRICHTIGUNGSSYSTEME",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"INTEGRIERTE LOGISTIKSOFTWARE MIT ERP",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"ERWEITERTE RÜCKVERFOLGBARKEIT MIT RFID",
+            "img":""
+        },
+        {
+            "link":"https://www.quadrant.com.ar/",
+            "linktitle":"QUADRANT",
+            "title":"ENTWICKLUNGS-SOFTWARE",
+            "img":""
+        }       
+    ]
+}

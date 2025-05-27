@@ -1,4 +1,7 @@
+"use client"
+
 import { useState } from "react"
+import { motion } from "framer-motion"
 import {
   Warehouse,
   Truck,
@@ -14,112 +17,130 @@ import {
   Settings,
 } from "lucide-react"
 
-const services = [
-  {
-    id: 1,
-    title: "Almacenamiento",
-    icon: Warehouse,
-    details: {
-      title: "Almacenamiento",
-      description:
-        "Depósitos en CABA y Zona Norte PBA.",
-    },
-  },
-]
+const CardServices = ({ service, index }) => {
+  const [isHovered, setIsHovered] = useState(false)
 
-export default function ServicesCards() {
-  const [hoveredCard, setHoveredCard] = useState(null)
+  // Mapeo de iconos por nombre
+  const iconMap = {
+    Warehouse,
+    Truck,
+    ShoppingCart,
+    Building2,
+    Package,
+    ClipboardList,
+    Scan,
+    FileText,
+    Clock,
+    MapPin,
+    ShoppingBag,
+    Settings,
+  }
+
+  const IconComponent = iconMap[service.icon] || Warehouse
 
   return (
-    <section id="services" className="py-16 px-4 ">
-      <div className="max-w-7xl mx-auto">
-        {/* Header 
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-6">
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center transform rotate-12 shadow-lg">
-              <span className="text-white font-bold text-2xl transform -rotate-12">S</span>
+    <motion.div
+      className={`group cursor-pointer transition-all duration-500 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs ${
+        isHovered ? "scale-105 z-10 shadow-2xl" : ""
+      }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      whileHover={{ scale: 1.05 }}
+    >
+      <div className="p-0 relative h-full">
+        {/* Default State */}
+        <motion.div
+          className="transition-all duration-500"
+          animate={{
+            opacity: isHovered ? 0 : 1,
+            scale: isHovered ? 0.95 : 1,
+          }}
+          transition={{ duration: 0.5 }}
+        >
+          {/* Orange Border */}
+          <div className="h-1 w-full bg-gradient-to-r from-orange-400 to-orange-500"></div>
+
+          {/* Content */}
+          <div className="p-4 sm:p-6 h-40 sm:h-48 md:h-52 lg:h-48 xl:h-44 flex flex-col items-center justify-center text-center">
+            <motion.div
+              className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4 transition-colors duration-300 ${
+                isHovered ? "bg-orange-50" : "bg-gray-100"
+              }`}
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 0.6 }}
+            >
+              <IconComponent
+                className={`w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 transition-colors duration-300 ${isHovered ? "text-orange-500" : "text-gray-600"}`}
+              />
+            </motion.div>
+
+            <h3
+              className={`font-bold text-xs sm:text-sm md:text-base lg:text-sm xl:text-xs leading-tight transition-colors duration-300 ${
+                isHovered ? "text-teal-600" : "text-gray-900"
+              }`}
+            >
+              {service.title}
+            </h3>
+          </div>
+        </motion.div>
+
+        {/* Hover State */}
+        <motion.div
+          className="absolute inset-0"
+          animate={{
+            opacity: isHovered ? 1 : 0,
+            scale: isHovered ? 1 : 1.05,
+          }}
+          transition={{ duration: 0.5 }}
+        >
+          {/* Teal Border for Hover State */}
+          <div className="h-1 w-full bg-gradient-to-r from-teal-500 to-teal-600"></div>
+
+          {/* Detailed Content */}
+          <div className="p-4 sm:p-6 h-full bg-gradient-to-br from-teal-50 to-white flex flex-col justify-between">
+            <div>
+              <motion.div
+                className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4"
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: isHovered ? 0 : -20, opacity: isHovered ? 1 : 0 }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+              >
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-r from-teal-500 to-teal-600 flex items-center justify-center">
+                  <IconComponent className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <motion.div
+                  className="w-2 h-2 bg-orange-400 rounded-full"
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
+                />
+              </motion.div>
+
+              <motion.h4
+                className="font-bold text-teal-900 text-xs sm:text-sm md:text-base lg:text-sm xl:text-xs leading-tight mb-2 sm:mb-3"
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: isHovered ? 0 : 10, opacity: isHovered ? 1 : 0 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
+              >
+                {service.title}
+              </motion.h4>
+
+              <motion.p
+                className="text-xs sm:text-xs md:text-sm lg:text-xs xl:text-xs text-gray-700 leading-relaxed"
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: isHovered ? 0 : 10, opacity: isHovered ? 1 : 0 }}
+                transition={{ duration: 0.3, delay: 0.4 }}
+              >
+                {service.description}
+              </motion.p>
             </div>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">Our Services</h2>
-          <p className="text-xl text-teal-600 font-medium max-w-2xl mx-auto">
-            We are passionate about logistics... We're here to serve you!
-          </p>
-        </div>*/}
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {services.map((service) => {
-            const IconComponent = service.icon
-            const isHovered = hoveredCard === service.id
-
-            return (
-              <div
-                key={service.id}
-                className={`group cursor-pointer transition-all duration-500 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg ${
-                  isHovered ? "scale-105 z-10 shadow-2xl" : ""
-                }`}
-                onMouseEnter={() => setHoveredCard(service.id)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="p-0 relative h-full">
-                  {/* Default State */}
-                  <div
-                    className={`transition-all duration-500 ${isHovered ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
-                  >
-                    {/* Orange Border */}
-                    <div className="h-1 w-full bg-gradient-to-r from-orange-400 to-orange-500"></div>
-
-                    {/* Content */}
-                    <div className="p-6 h-48 flex flex-col items-center justify-center text-center">
-                      <div
-                        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-colors duration-300 ${isHovered ? "bg-orange-50" : "bg-gray-100"}`}
-                      >
-                        <IconComponent
-                          className={`w-8 h-8 transition-colors duration-300 ${isHovered ? "text-orange-500" : "text-gray-600"}`}
-                        />
-                      </div>
-
-                      <h3
-                        className={`font-bold text-sm leading-tight transition-colors duration-300 ${isHovered ? "text-teal-600" : "text-gray-900"}`}
-                      >
-                        {service.title}
-                      </h3>
-                    </div>
-                  </div>
-
-                  {/* Hover State */}
-                  <div
-                    className={`absolute inset-0 transition-all duration-500 ${
-                      isHovered ? "opacity-100 scale-100" : "opacity-0 scale-105"
-                    }`}
-                  >
-                    {/* Teal Border for Hover State */}
-                    <div className="h-1 w-full bg-gradient-to-r from-teal-500 to-teal-600"></div>
-
-                    {/* Detailed Content */}
-                    <div className="p-6 h-full bg-gradient-to-br from-teal-50 to-white flex flex-col justify-between">
-                      <div>
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-teal-500 to-teal-600 flex items-center justify-center">
-                            <IconComponent className="w-5 h-5 text-white" />
-                          </div>
-                          <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
-                        </div>
-
-                        <h4 className="font-bold text-teal-900 text-sm leading-tight mb-3">{service.details.title}</h4>
-
-                        <p className="text-xs text-gray-700 leading-relaxed">{service.details.description}</p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-
+        </motion.div>
       </div>
-    </section>
+    </motion.div>
   )
 }
+
+export default CardServices

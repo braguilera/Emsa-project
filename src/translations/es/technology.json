@@ -1,1 +1,67 @@
-{}
+{
+    "backTitle": "Technology",
+    "frontTitle": "Applied Technology",
+    "description": "Our logistics solutions are powered by cutting-edge technology, optimizing every stage of the supply chain.",
+    "technologies": [
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"GESTIÓN INTEGRAL DE ALMACENES (WMS)",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"GESTIÓN INTELIGENTE DEL TRANSPORTE (TMS)",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"PLANIFICACIÓN Y CONTROL DE FLOTA",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"APLICACIONES MÓVILES DE TRAZABILIDAD",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"PANELES DE CONTROL PERSONALIZADOS",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"ANÁLISIS Y REPORTES INTELIGENTES",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"ALERTA Y NOTIFICACIONES EN TIEMPO REAL",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"SOFTWARE DE GESTIÓN LOGÍSTICA INTEGRADA POR AL ERP",
+            "img":""
+        },
+        {
+            "link":"",
+            "linktitle":"",
+            "title":"TRAZABILIDAD AVANZADA CON RFID",
+            "img":""
+        },
+        {
+            "link":"https://www.quadrant.com.ar/",
+            "linktitle":"QUADRANT",
+            "title":"CUSTOM SOFTWARE DEVELOPMENT",
+            "img":""
+        }       
+    ]
+}

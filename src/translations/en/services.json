@@ -1,1 +1,67 @@
-{}
+{
+    "backTitle": "Services",
+    "frontTitle":"Our Services",
+    "description":"We are passionate about logistics... We're here to serve you!",
+    "services": [
+        {
+            "title": "STORAGE",
+            "description": "Warehouses in Buenos Aires City and Northern Greater Buenos Aires",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "COMPREHENSIVE TRANSPORTATION. GENERAL CARGO AND IMO CARGO",
+            "description": "National reachSmart route planning. Real-time tracking",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "RETAIL CHANNEL DISTRIBUTION",
+            "description": "Route planning I Invoicing and collections I Delivery tracking Reverse logistics I Fleet management",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "WHOLESALE CHANNEL DISTRIBUTION",
+            "description": "Cross-docking and/or order preparation from our DCs, with consolidated delivery",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "INVENTORY MANAGEMENT",
+            "description": "Real-time stock monitoring FIFO | FEFO | LIFO",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "ORDER PREPARATION",
+            "description": "Picking and packing Deconsolidation and consolidation Retail I Wholesale I E-commerce",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "FULL TRACEABILITY (QR/BARCODE/RFID)",
+            "description": "Product labeling for identification and tracking tailored to your needs (QR | Barcodes | RFID)",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "DIGITAL DOCUMENT MANAGEMENT",
+            "description": "Streamlining of administrative processes and reduction of paper use",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "TIMELESS",
+            "description": "Mobile apps and delivery management systems that optimize routing and ensure on-time deliveries",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "TRACKING",
+            "description": "Real-time tracking via web platform and mobile apps",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "FULFILLMENT / E-COMMERCE",
+            "description": "Integration with your e-commerce / Door-to-door service",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "NEW PROJECTS AND LOGISTICS OPERATIONS",
+            "description": "Development of new operations tailored to your specific needs",
+            "icon": "Warehouse"
+        }
+    ]
+}

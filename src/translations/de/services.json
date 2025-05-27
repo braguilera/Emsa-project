@@ -1,1 +1,67 @@
-{}
+{
+    "backTitle": "Dienstleistungen",
+    "frontTitle":"Unsere Dienstleistungen",
+    "description":"Wir lieben Logistik... Wir sind für dich da!",
+    "services": [
+        {
+            "title": "LAGERHALTUNG",
+            "description": "Lager in CABA und Nordzone von Buenos Aires",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "INTEGRALER TRANSPORT ALLGEMEINE UND GEFAHRGûTER",
+            "description": "Landesweite Abdeckung Intelligente Routenplanung. Echtzeitverfolgung",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "VERTEILUNG IM EINZELHANDEL",
+            "description": "Routenplanung Rechnungsstellung und Inkasso Sendungsverfolgung Retourenlogistik Fuhrparkmanagement",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "VERTEILUNG IM GROSSHANDEL",
+            "description": "Cross-Docking und/oder Auftragsabwicklung von unseren Logistikzentren mit konsolidierter Lieferung",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "LAGERVERWALTUNG",
+            "description": "Echtzeitüberwachung Ihres Lagerbestands. FIFO | FEFO | LIFO",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "KOMMISSIONIERUNG",
+            "description": "Kommissionierung und Verpackung Entladung und Konsolidierung Einzelhandel I Großhandel E-Commerce",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "VOLLE RûCKVERFOLGBARKEIT (QR I STICHCODE I RFID)",
+            "description": "Etikettierung zur Identifikation und Nachverfolgung der Ware nach Ihren Anforderungen (QR | Strichcode | RFID))",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "DIGITALE DOKUMENTENVERWALTUNG",
+            "description": "Optimierung administrativer Prozesse und Reduzierung des Papierverbrauchs",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "PûNKTLICHKEIT",
+            "description": "Mobile Apps und Liefermanagementsysteme, die Routen optimieren und pünktliche Lieferungen gewährleisten",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "SENDUNGSVERFOLGUNG",
+            "description": "Echtzeitverfolgung über Webplattform und mobile Anwendungen",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "FULFILMENT / E-COMMERCE",
+            "description": "Integration mit Ihrem E-Commerce / Tür-zu-Tür-Service",
+            "icon": "Warehouse"
+        },
+        {
+            "title": "NEUE PROJEKTE UND LOGISTIKBETRIEBE",
+            "description": "Entwicklung neuer Betriebsprozesse maßgeschneidert auf Ihre Anforderungen",
+            "icon": "Warehouse"
+        }
+    ]
+}
