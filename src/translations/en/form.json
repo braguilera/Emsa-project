@@ -1,0 +1,9 @@
+{
+    "title":"Contact",
+    "name":"Name and surname | Company",
+    "phone":"Phone",
+    "query":"Message",
+    "button":"SEND",
+    "sendTitle":"Your message was sent correctly!",
+    "sendText":"We'll be contacting you shortly. Thank you very much."
+}

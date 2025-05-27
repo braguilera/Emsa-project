@@ -1,0 +1,9 @@
+{
+  "nav": [
+    { "title": "Dienstleistungen", "href": "#services" },
+    { "title": "Technologie", "href": "#technology" },
+    { "title": "Uns", "href": "#aboutUs" },
+    { "title": "Nachrichten", "href": "#news" },
+    { "title": "Kontakt", "href": "#contact" }
+  ]
+}

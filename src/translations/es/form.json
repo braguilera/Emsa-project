@@ -1,0 +1,9 @@
+{
+    "title":"Contacto",
+    "name":"Nombre y Apellido | Empresa",
+    "phone":"Teléfono",
+    "query":"Mensaje",
+    "button":"ENVIAR",
+    "sendTitle":"¡Su consulta fue enviada correctamente!",
+    "sendText":"A la brevedad estaremos poniéndonos en contacto con usted. Muchas gracias."
+}
