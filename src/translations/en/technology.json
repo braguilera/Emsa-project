@@ -1,67 +1,87 @@
 {
-    "backTitle":"Tecnología",
-    "frontTitle":"Tecnología Aplicada",
-    "description":"Nuestras soluciones logísticas se potencian con tecnología de vanguardia, optimizando cada etapa de la cadena de suministro.",
-    "technologies":[
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INTEGRATED WAREHOUSE MANAGEMENT (WMS)",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"SMART TRANSPORTATION MANAGEMENT (TMS)",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"FLEET PLANNING AND CONTROL",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"MOBILE TRACEABILITY APPLICATIONS",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"CUSTOMIZED DASHBOARDS",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INTELLIGENT ANALYTICS AND REPORTING",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"REAL-TIME ALERTS AND NOTIFICATIONS",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INTEGRATED LOGISTICS MANAGEMENT SOFTWARE CONNECTED TO ERP",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"ADVANCED TRACEABILITY WITH RFID",
-            "img":""
-        },
-        {
-            "link":"https://www.quadrant.com.ar/",
-            "linktitle":"QUADRANT",
-            "title":"CUSTOM SOFTWARE DEVELOPMENT",
-            "img":""
-        }       
-    ]
+  "backTitle": "Technology",
+  "frontTitle": "Applied Technology",
+  "description": "Our logistics solutions are enhanced with cutting-edge technology, optimizing every stage of the supply chain.",
+  "technologies": [
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "INTEGRATED WAREHOUSE MANAGEMENT SYSTEM (WMS)",
+      "img": "gestion_almacen",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "SMART TRANSPORT MANAGEMENT SYSTEM (TMS)",
+      "img": "gestion_transporte",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "FLEET PLANNING AND CONTROL",
+      "img": "planificacion_flota",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "MOBILE TRACKING APPLICATIONS",
+      "img": "trazabilidad_movil",
+      "icon": "Warehouse",
+      "category": "trazabilidad"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "CUSTOM DASHBOARDS",
+      "img": "paneles_control",
+      "icon": "Warehouse",
+      "category": "reportes"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "SMART REPORTS AND ANALYTICS",
+      "img": "analisis_inteligentes",
+      "icon": "Warehouse",
+      "category": "reportes"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "REAL-TIME ALERTS AND NOTIFICATIONS",
+      "img": "notificaciones_tiempo_real",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "LOGISTICS SOFTWARE INTEGRATED WITH ERP",
+      "img": "software_integrado",
+      "icon": "Warehouse",
+      "category": "integracion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "ADVANCED RFID TRACKING",
+      "img": "trazabilidad_rfid",
+      "icon": "Warehouse",
+      "category": "trazabilidad"
+    },
+    {
+      "link": "https://www.quadrant.com.ar/",
+      "linktitle": "QUADRANT",
+      "title": "CUSTOM SOFTWARE DEVELOPMENT",
+      "img": "quadrant",
+      "icon": "Warehouse",
+      "category": "integracion"
+    }
+  ]
 }

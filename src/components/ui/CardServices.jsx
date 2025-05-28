@@ -17,7 +17,7 @@ import {
   Settings,
 } from "lucide-react"
 
-const CardServices = ({ service, index }) => {
+const CardServices = ({ service }) => {
   const [isHovered, setIsHovered] = useState(false)
 
   // Mapeo de iconos por nombre
@@ -40,14 +40,14 @@ const CardServices = ({ service, index }) => {
 
   return (
     <motion.div
-      className={`group cursor-pointer transition-all duration-500 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs ${
+      className={`group text-center cursor-pointer transition-all duration-300 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs ${
         isHovered ? "scale-105 z-10 shadow-2xl" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.5}}
       whileHover={{ scale: 1.05 }}
     >
       <div className="p-0 relative h-full">
@@ -100,7 +100,7 @@ const CardServices = ({ service, index }) => {
           <div className="h-1 w-full bg-gradient-to-r from-teal-500 to-teal-600"></div>
 
           {/* Detailed Content */}
-          <div className="p-4 sm:p-6 h-full bg-gradient-to-br from-teal-50 to-white flex flex-col justify-between">
+          <div className="p-4  h-full bg-gradient-to-br from-teal-50 to-white flex flex-col justify-between">
             <div>
               <motion.div
                 className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4"

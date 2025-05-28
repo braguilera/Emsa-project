@@ -1,67 +1,87 @@
 {
-    "backTitle": "Technology",
-    "frontTitle": "Applied Technology",
-    "description": "Our logistics solutions are powered by cutting-edge technology, optimizing every stage of the supply chain.",
-    "technologies": [
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"GESTIÓN INTEGRAL DE ALMACENES (WMS)",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"GESTIÓN INTELIGENTE DEL TRANSPORTE (TMS)",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"PLANIFICACIÓN Y CONTROL DE FLOTA",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"APLICACIONES MÓVILES DE TRAZABILIDAD",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"PANELES DE CONTROL PERSONALIZADOS",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"ANÁLISIS Y REPORTES INTELIGENTES",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"ALERTA Y NOTIFICACIONES EN TIEMPO REAL",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"SOFTWARE DE GESTIÓN LOGÍSTICA INTEGRADA POR AL ERP",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"TRAZABILIDAD AVANZADA CON RFID",
-            "img":""
-        },
-        {
-            "link":"https://www.quadrant.com.ar/",
-            "linktitle":"QUADRANT",
-            "title":"CUSTOM SOFTWARE DEVELOPMENT",
-            "img":""
-        }       
-    ]
+  "backTitle": "Tecnología",
+  "frontTitle": "Tecnología Aplicada",
+  "description": "Nuestras soluciones logísticas se potencian con tecnología de vanguardia, optimizando cada etapa de la cadena de suministro.",
+  "technologies": [
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "GESTIÓN INTEGRAL DE ALMACENES (WMS)",
+      "img": "gestion_almacen",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "GESTIÓN INTELIGENTE DEL TRANSPORTE (TMS)",
+      "img": "gestion_transporte",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "PLANIFICACIÓN Y CONTROL DE FLOTA",
+      "img": "planificacion_flota",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "APLICACIONES MÓVILES DE TRAZABILIDAD",
+      "img": "trazabilidad_movil",
+      "icon": "Warehouse",
+      "category": "trazabilidad"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "PANELES DE CONTROL PERSONALIZADOS",
+      "img": "paneles_control",
+      "icon": "Warehouse",
+      "category": "reportes"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "ANÁLISIS Y REPORTES INTELIGENTES",
+      "img": "analisis_inteligentes",
+      "icon": "Warehouse",
+      "category": "reportes"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "ALERTA Y NOTIFICACIONES EN TIEMPO REAL",
+      "img": "notificaciones_tiempo_real",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "SOFTWARE DE GESTIÓN LOGÍSTICA INTEGRADA POR AL ERP",
+      "img": "software_integrado",
+      "icon": "Warehouse",
+      "category": "integracion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "TRAZABILIDAD AVANZADA CON RFID",
+      "img": "trazabilidad_rfid",
+      "icon": "Warehouse",
+      "category": "trazabilidad"
+    },
+    {
+      "link": "https://www.quadrant.com.ar/",
+      "linktitle": "QUADRANT",
+      "title": "DESARROLLO DE SOFTWARE A MEDIDA",
+      "img": "quadrant",
+      "icon": "Warehouse",
+      "category": "integracion"
+    }
+  ]
 }

@@ -1,112 +1,153 @@
-
 import { useState } from "react"
-import { Warehouse, Truck, BarChart3, Smartphone, Monitor, Brain, Bell, Network, Zap, Layers } from "lucide-react"
+import {
+  Warehouse,
+  Truck,
+  ShoppingCart,
+  Building2,
+  Package,
+  ClipboardList,
+  Scan,
+  FileText,
+  Clock,
+  MapPin,
+  ShoppingBag,
+  Settings,
+} from "lucide-react"
+import { motion } from "framer-motion"
+import gestion_almacen from "../../assets/technology/gestion_almacen.png"
+import gestion_transporte from "../../assets/technology/gestion_transporte.png"
+import planificacion_flota from "../../assets/technology/planificacion_flota.png"
+import trazabilidad_movil from "../../assets/technology/trazabilidad_movil.png"
+import paneles_control from "../../assets/technology/paneles_control.png"
+import analisis_inteligentes from "../../assets/technology/analisis_inteligentes.png"
+import notificaciones_tiempo_real from "../../assets/technology/notificaciones_tiempo_real.png"
+import software_integrado from "../../assets/technology/software_integrado.png"
+import trazabilidad_rfid from "../../assets/technology/trazabilidad_rfid.png"
+import quadrant from "../../assets/technology/quadrant.png"
 
-const technologies = [
-  {
-    id: 1,
-    title: "GESTIÓN INTEGRAL DE ALMACENES (WMS)",
-    subtitle: "",
-    icon: Warehouse,
-    image: "/placeholder.svg?height=200&width=300",
-    category: "Gestión",
-  },
-]
 
-export default function Technology() {
-  const [hoveredCard, setHoveredCard] = useState(null)
+
+const CardTechnology = ({ tech }) => {
+  const [isHovered, setIsHovered] = useState(false)
+
+  const icons = {
+    Warehouse,
+    Truck,
+    ShoppingCart,
+    Building2,
+    Package,
+    ClipboardList,
+    Scan,
+    FileText,
+    Clock,
+    MapPin,
+    ShoppingBag,
+    Settings,
+  }
+
+  const IconComponent = icons[tech.icon] || Package
+
+  const imageMapping = {
+  gestion_almacen: gestion_almacen,
+  gestion_transporte: gestion_transporte,
+  planificacion_flota: planificacion_flota,
+  trazabilidad_movil: trazabilidad_movil,
+  paneles_control: paneles_control,
+  analisis_inteligentes: analisis_inteligentes,
+  notificaciones_tiempo_real: notificaciones_tiempo_real,
+  software_integrado: software_integrado,
+  trazabilidad_rfid: trazabilidad_rfid,
+  quadrant: quadrant,
+};
 
   return (
-    <section id="technology" className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Header
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-1 w-12 bg-gradient-to-r from-teal-500 to-orange-400 rounded-full"></div>
-            <h2 className="text-4xl font-bold text-gray-900">Tecnología Aplicada</h2>
-            <div className="h-1 w-12 bg-gradient-to-r from-orange-400 to-teal-500 rounded-full"></div>
+    <motion.div
+      className={`group text-center cursor-pointer transition-all duration-300 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs ${
+        isHovered ? "scale-105 z-10 shadow-2xl" : ""
+      }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2, delay:  0.1 }}
+      whileHover={{ scale: 1.05 }}
+    >
+      <div className="p-0 relative">
+        <motion.div
+          layout
+          className={`h-2 w-full bg-gradient-to-r from-teal-500 to-teal-600 ${isHovered ? "h-3" : ""}`}
+          transition={{ duration: 0.3 }}
+        />
+
+        <div className="p-6">
+          <div className="flex justify-between items-start mb-4">
+            <motion.span
+              layout
+              className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                isHovered ? "bg-orange-100 text-orange-700" : "bg-gray-100 text-gray-700"
+              }`}
+              transition={{ duration: 0.3 }}
+            >
+              {tech.category}
+            </motion.span>
+
+            <motion.div
+              layout
+              className={`p-2 rounded-lg ${isHovered ? "bg-orange-100" : "bg-gray-100"}`}
+              transition={{ duration: 0.3 }}
+            >
+              <IconComponent
+                className={`w-5 h-5 ${isHovered ? "text-orange-500 scale-110" : "text-gray-600"}`}
+              />
+            </motion.div>
           </div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Nuestras soluciones logísticas se potencian con tecnología de vanguardia, optimizando cada etapa de la
-            cadena de suministro.
-          </p>
-        </div> */}
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-          {technologies.map((tech) => {
-            const IconComponent = tech.icon
-            const isHovered = hoveredCard === tech.id
+          <motion.a
+            layout
+            className={`font-bold text-sm leading-tight  mb-2 hover:text-blue-700 text-blue-400 underline underline-offset-2`}
+            transition={{ duration: 0.3 }}
+            href={tech.link}
+            target="_blank"
+          >
+            {tech.linktitle}
+          </motion.a>
 
-            return (
-              <div
-                key={tech.id}
-                className={`group cursor-pointer transition-all duration-300 hover:shadow-xl border border-gray-200 overflow-hidden bg-white rounded-lg ${
-                  isHovered ? "scale-105 shadow-2xl" : ""
-                }`}
-                onMouseEnter={() => setHoveredCard(tech.id)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="p-0 relative">
-                  {/* Teal Color Bar */}
-                  <div
-                    className={`h-2 w-full bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-300 ${isHovered ? "h-3" : ""}`}
-                  ></div>
+          <motion.h3
+            layout
+            className={`font-bold text-sm leading-tight mb-2 ${isHovered ? "text-teal-600" : "text-gray-900"}`}
+            transition={{ duration: 0.3 }}
+          >
+            {tech.title}
+          </motion.h3>
 
-                  {/* Content */}
-                  <div className="p-6">
-                    {/* Category Badge and Icon */}
-                    <div className="flex justify-between items-start mb-4">
-                      <span
-                        className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium transition-colors duration-300 ${
-                          isHovered ? "bg-orange-100 text-orange-700" : "bg-gray-100 text-gray-700"
-                        }`}
-                      >
-                        {tech.category}
-                      </span>
-                      <div
-                        className={`p-2 rounded-lg transition-all duration-300 ${isHovered ? "bg-orange-100" : "bg-gray-100"}`}
-                      >
-                        <IconComponent
-                          className={`w-5 h-5 transition-all duration-300 ${isHovered ? "text-orange-500 scale-110" : "text-gray-600"}`}
-                        />
-                      </div>
-                    </div>
+          <div className="relative mb-4 overflow-hidden rounded-lg bg-gray-100">
+            <motion.img
+              layout
+              src={imageMapping[tech.img]}
+              alt={tech.title}
+              className={`w-full h-32 object-cover ${isHovered ? "scale-125" : "scale-100"}`}
+              transition={{ duration: 0.5 }}
+            />
+            <motion.div
+              layout
+              className={`absolute inset-0 bg-gradient-to-t from-teal-900/20 to-transparent ${
+                isHovered ? "opacity-100" : "opacity-0"
+              }`}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
 
-                    {/* Title */}
-                    <h3
-                      className={`font-bold text-sm leading-tight mb-2 transition-colors duration-300 ${isHovered ? "text-teal-600" : "text-gray-900"}`}
-                    >
-                      {tech.title}
-                      {tech.subtitle && (
-                        <span className="block text-xs font-medium text-gray-500 mt-1">{tech.subtitle}</span>
-                      )}
-                    </h3>
-
-                    {/* Image with Hover Zoom */}
-                    <div className="relative mb-4 overflow-hidden rounded-lg bg-gray-100">
-                      <img
-                        src={tech.image || "/placeholder.svg"}
-                        alt={tech.title}
-                        className={`w-full h-32 object-cover transition-transform duration-500 ${isHovered ? "scale-125" : "scale-100"}`}
-                      />
-                      <div
-                        className={`absolute inset-0 bg-gradient-to-t from-teal-900/20 to-transparent transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
-                      ></div>
-                    </div>
-
-                    {/* Hover Effect Indicator */}
-                    <div
-                      className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-orange-500 transition-transform duration-300 origin-left ${isHovered ? "scale-x-100" : "scale-x-0"}`}
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
+          <motion.div
+            layout
+            className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-orange-500 origin-left ${
+              isHovered ? "scale-x-100" : "scale-x-0"
+            }`}
+            transition={{ duration: 0.3 }}
+          />
         </div>
-
       </div>
-    </section>
+    </motion.div>
   )
 }
+
+export default CardTechnology

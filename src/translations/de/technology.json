@@ -1,67 +1,87 @@
 {
-    "backTitle":"Technologie",
-    "frontTitle":"Angewandte Technologie",
-    "description":"Unsere Logistiklösungen werden durch modernste Technologie unterstützt und optimieren jede Phase der Lieferkette.",
-    "technologies":[
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INTEGRALES LAGERMANAGEMENT (WMS)",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INTELLIGENTES TRANSPORTMANAGEMENT (TMS)",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"FLOTTENPLANUNG UND -KONTROLLE",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"APLICACIONES MÓVILES DE TRAZMOBILE ANWENDUNGEN ZUR RÜCKVERFOLGBARKEITABILIDAD",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INDIVIDUELL ANGEPASSTE DASHBOARDS",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INTELLIGENTE ANALYSEN UND BERICHTE",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"ECHTZEIT-ALARM- UND BENACHRICHTIGUNGSSYSTEME",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"INTEGRIERTE LOGISTIKSOFTWARE MIT ERP",
-            "img":""
-        },
-        {
-            "link":"",
-            "linktitle":"",
-            "title":"ERWEITERTE RÜCKVERFOLGBARKEIT MIT RFID",
-            "img":""
-        },
-        {
-            "link":"https://www.quadrant.com.ar/",
-            "linktitle":"QUADRANT",
-            "title":"ENTWICKLUNGS-SOFTWARE",
-            "img":""
-        }       
-    ]
+  "backTitle": "Technologie",
+  "frontTitle": "Angewandte Technologie",
+  "description": "Unsere Logistiklösungen werden durch modernste Technologie unterstützt, um jede Phase der Lieferkette zu optimieren.",
+  "technologies": [
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "INTEGRIERTES LAGERVERWALTUNGSSYSTEM (WMS)",
+      "img": "gestion_almacen",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "INTELLIGENTE TRANSPORTVERWALTUNG (TMS)",
+      "img": "gestion_transporte",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "FLOTTENPLANUNG UND -KONTROLLE",
+      "img": "planificacion_flota",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "MOBILE TRACKING-ANWENDUNGEN",
+      "img": "trazabilidad_movil",
+      "icon": "Warehouse",
+      "category": "trazabilidad"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "BENUTZERDEFINIERTE DASHBOARDS",
+      "img": "paneles_control",
+      "icon": "Warehouse",
+      "category": "reportes"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "INTELLIGENTE ANALYSEN UND BERICHTE",
+      "img": "analisis_inteligentes",
+      "icon": "Warehouse",
+      "category": "reportes"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "ECHTZEITBENACHRICHTIGUNGEN UND ALARME",
+      "img": "notificaciones_tiempo_real",
+      "icon": "Warehouse",
+      "category": "gestion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "LOGISTIKVERWALTUNGSSOFTWARE INTEGRIERT MIT ERP",
+      "img": "software_integrado",
+      "icon": "Warehouse",
+      "category": "integracion"
+    },
+    {
+      "link": "",
+      "linktitle": "",
+      "title": "ERWEITERTE RFID-TRACKING",
+      "img": "trazabilidad_rfid",
+      "icon": "Warehouse",
+      "category": "trazabilidad"
+    },
+    {
+      "link": "https://www.quadrant.com.ar/",
+      "linktitle": "QUADRANT",
+      "title": "MASSGESCHNEIDERTE SOFTWAREENTWICKLUNG",
+      "img": "quadrant",
+      "icon": "Warehouse",
+      "category": "integracion"
+    }
+  ]
 }
