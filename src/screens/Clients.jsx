@@ -1,9 +1,17 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
+import Title from '../components/utils/Title'
+import CarrouselClients from '../components/ui/CarrouselClients'
 
 const Clients = () => {
+  const { t } = useTranslation('clients')
+
+  
+  
   return (
     <div>
-      Clients
+      <Title backgroundText={t('backTitle')} frontText={t('frontTitle')}/>
+      <CarrouselClients/>
     </div>
   )
 }
