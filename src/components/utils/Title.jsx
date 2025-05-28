@@ -2,9 +2,9 @@
 
 const Title = ({ backgroundText, frontText, className = "" }) => {
   return (
-    <div className={`relative h-12 sm:h-24 lg:h-32 text-center py-8 ${className}`}>
+    <div className={`relative w-full h-24 lg:h-32 text-center py-8 ${className}`}>
       {/* Texto de fondo - grande y gris muy claro */}
-      <h2 className="absolute left-1/2 -translate-x-1/2 bottom-0 flex items-center justify-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-slate-300 opacity-30 select-none pointer-events-none">
+      <h2 className="absolute left-1/2 -translate-x-1/2 bottom-0 flex items-center justify-center text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-slate-300 opacity-30 select-none pointer-events-none">
         {backgroundText}
       </h2>
 

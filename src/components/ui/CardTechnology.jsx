@@ -62,7 +62,7 @@ const CardTechnology = ({ tech }) => {
 
   return (
     <motion.div
-      className={`group text-center cursor-pointer transition-all duration-300 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs ${
+      className={`group text-center cursor-pointer transition-all duration-300 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full  ${
         isHovered ? "scale-105 z-10 shadow-2xl" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}

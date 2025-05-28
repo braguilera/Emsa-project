@@ -1,1 +1,18 @@
-{"title":""}
+{
+    "backTitle":"Über",
+    "frontTitle":"Uns",
+    "aboutUs":[
+        {
+            "title":"MISSION",
+            "text":"Bereitstellung eines integrierten Logistikservices mit Exzellenz, Qualität und modernster Technologie."
+        },
+        {
+            "title":"VISION",
+            "text":"Anerkennung als führendes und innovatives Unternehmen im Bereich integrierter Logistikdienstleistungen durch das Engagement für unsere Werte."
+        },
+        {
+            "title":"WERTE",
+            "text":"Teamgeist, Ehrlichkeit, Integrität, Kundenorientierung und Teamarbeit."
+        }
+    ]
+}
