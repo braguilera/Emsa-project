@@ -42,7 +42,7 @@ const News = () => {
   const { t } = useTranslation('news')
 
   return (
-    <section className="relative h-auto px-4 py-10 text-secondary overflow-hidden">
+    <section id='news' className="relative h-auto px-4 py-10 text-secondary overflow-hidden">
       <Title frontText={t('frontTitle')} backgroundText={t('backTitle')} />
 
       {/* Layout principal con grid y contenido */}

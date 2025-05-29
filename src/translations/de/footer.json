@@ -1,1 +1,30 @@
-{}
+{
+    "description": "Integrierter Logistikservice mit Qualität und Technologie.",
+    "categoriesTitle": "KATEGORIEN",
+    "categoriesLinks": [
+      { "name": "Dienstleistungen", 
+        "href":"#services"
+      },
+      { "name": "Technologie", 
+        "href":"#technology"
+      },
+      { "name": "Über uns", 
+        "href":"#aboutUs"
+      },
+      { "name": "Neuigkeiten", 
+        "href":"#news"
+      }
+    ],
+    "contactTitle": "KONTACT",
+    "contactLinks": [
+      { "name": "info@emsalog.com", 
+        "href":"mailto:info@emsalog.com"
+      },
+      { "name": "+54 11 5220-2723", 
+        "href":"tel:+541152202723"
+      },
+      { "name": "Av. Corrientes 2565 CP 1046 - CABA", 
+        "href":"https://maps.app.goo.gl/XvaDH4spLT3KTain6"
+      }
+    ]
+}
