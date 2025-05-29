@@ -6,8 +6,6 @@ import CarrouselClients from '../components/ui/CarrouselClients'
 const Clients = () => {
   const { t } = useTranslation('clients')
 
-  
-  
   return (
     <div>
       <Title backgroundText={t('backTitle')} frontText={t('frontTitle')}/>
