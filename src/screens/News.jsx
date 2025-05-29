@@ -32,6 +32,51 @@ const images = [
   storage3
 ]
 
+// Grid classes for desktop
+const desktopGridClasses = [
+  'col-span-2 row-span-2 rounded-tl-md',
+  'col-span-2 row-span-2 col-start-3',
+  'col-span-2 row-span-5 col-start-5 rounded-tr-md',
+  'row-span-3 row-start-3',
+  'col-span-3 row-span-3 row-start-3',
+  'col-span-4 row-span-2 row-start-6 rounded-bl-md',
+  'col-span-2 row-span-2 col-start-5 row-start-6',
+  'col-span-2 row-span-2 col-start-7 row-start-6',
+  'col-span-2 row-span-5 col-start-9 row-start-6 rounded-tr-md rounded-br-md',
+  'col-span-3 row-span-3 col-start-6 row-start-8',
+  'row-span-3 col-start-5 row-start-8 rounded-bl-md'
+]
+
+// Grid classes for mobile
+const mobileGridClasses = [
+  'col-span-1 row-span-1 overflow-hidden rounded-t-md z-10',
+  'col-start-2 row-start-2 rounded-tr-md row-span-2 overflow-hidden z-10',
+  'col-start-1 row-start-5 row-span-2 overflow-hidden z-10',
+  'col-start-1 row-start-2 row-span-2 overflow-hidden z-10',
+  'col-span-2 col-start-1 row-start-4 overflow-hidden z-10',
+  'col-start-1 row-start-7 overflow-hidden z-10',
+  'col-start-2 row-start-5 overflow-hidden z-10',
+  'col-start-2 row-start-6 row-span-2 overflow-hidden z-10',
+  'col-start-2 row-start-8 row-span-2 overflow-hidden z-10',
+  'col-span-2 col-start-1 row-start-10 overflow-hidden z-10',
+  'col-start-1 row-start-8 row-span-2 overflow-hidden z-10'
+]
+
+// Grid classes for tablet
+const tabletGridClasses = [
+  'col-span-2 row-span-2 overflow-hidden rounded-t-md z-10',
+  'col-span-2 row-span-2 col-start-3 row-start-2 overflow-hidden rounded-tr-md z-10',
+  'row-span-3 col-start-3 row-start-4 overflow-hidden z-10',
+  'row-span-3 col-start-1 row-start-3 overflow-hidden z-10',
+  'row-span-3 col-start-2 rounded-xl row-start-3 overflow-hidden z-10',
+  'col-span-2 row-span-2 col-start-1 row-start-6 overflow-hidden z-10',
+  'row-span-3 col-start-4 row-start-4 overflow-hidden z-10',
+  'col-span-2 row-span-2 col-start-3 row-start-7 overflow-hidden z-10',
+  'row-span-3 col-start-2 row-start-8 overflow-hidden z-10',
+  'col-span-2 row-span-2 col-start-3 row-start-9 rounded-br-md overflow-hidden z-10',
+  'row-span-3 col-start-1 rounded-bl-md row-start-8 overflow-hidden z-10'
+]
+
 const fadeIn = (i) => ({
   initial: { opacity: 0, scale: 0.9 },
   animate: { opacity: 1, scale: 1 },
@@ -52,19 +97,7 @@ const News = () => {
           {images.map((src, i) => (
             <motion.div
               key={i}
-              className={`overflow-hidden z-10 w-full h-full
-                ${i === 0 ? 'col-span-2 row-span-2 rounded-tl-md' : ''}
-                ${i === 1 ? 'col-span-2 row-span-2 col-start-3' : ''}
-                ${i === 2 ? 'col-span-2 row-span-5 col-start-5 rounded-tr-md' : ''}
-                ${i === 3 ? 'row-span-3 row-start-3' : ''}
-                ${i === 4 ? 'col-span-3 row-span-3 row-start-3' : ''}
-                ${i === 5 ? 'col-span-4 row-span-2 row-start-6 rounded-bl-md' : ''}
-                ${i === 6 ? 'col-span-2 row-span-2 col-start-5 row-start-6' : ''}
-                ${i === 7 ? 'col-span-2 row-span-2 col-start-7 row-start-6' : ''}
-                ${i === 8 ? 'col-span-2 row-span-5 col-start-9 row-start-6 rounded-tr-md rounded-br-md' : ''}
-                ${i === 9 ? 'col-span-3 row-span-3 col-start-6 row-start-8' : ''}
-                ${i === 10 ? 'row-span-3 col-start-5 row-start-8 rounded-bl-md' : ''}
-              `}
+              className={`overflow-hidden z-10 w-full h-full group  ${desktopGridClasses[i]}`}
               initial={fadeIn(i).initial}
               whileInView={fadeIn(i).animate}
               transition={fadeIn(i).transition}
@@ -73,7 +106,7 @@ const News = () => {
               <img
                 src={src}
                 alt={`news-${i + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
               />
             </motion.div>
           ))}
@@ -88,184 +121,36 @@ const News = () => {
         <div className="lg:hidden relative">
           {/* Mobile (pantallas pequeñas) - Grid 10x10 con 2 columnas efectivas */}
           <div className="sm:hidden grid grid-cols-2 grid-rows-1 gap-2 h-auto">
-            {/* div1 - imagen 0 */}
-            <motion.div
-              className="col-span-1 row-span-1 overflow-hidden rounded-t-md z-10"
-              {...fadeIn(0)}
-            >
-              <img src={images[0]} alt="logistics-1" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div2 - imagen 1 */}
-            <motion.div
-              className="col-start-2 row-start-2 rounded-tr-md row-span-2 overflow-hidden  z-10"
-              {...fadeIn(1)}
-            >
-              <img src={images[1]} alt="logistics-2" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div3 - imagen 2 */}
-            <motion.div
-              className="col-start-1 row-start-5 row-span-2 overflow-hidden z-10"
-              {...fadeIn(2)}
-            >
-              <img src={images[2]} alt="logistics-3" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div4 - imagen 3 */}
-            <motion.div
-              className="col-start-1 row-start-2 row-span-2 overflow-hidden z-10"
-              {...fadeIn(3)}
-            >
-              <img src={images[3]} alt="logistics-4" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div5 - imagen 4 */}
-            <motion.div
-              className="col-span-2 col-start-1 row-start-4 overflow-hidden z-10"
-              {...fadeIn(4)}
-            >
-              <img src={images[4]} alt="logistics-5" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div6 - imagen 5 */}
-            <motion.div
-              className="col-start-1 row-start-7 overflow-hidden z-10"
-              {...fadeIn(5)}
-            >
-              <img src={images[5]} alt="logistics-6" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div7 - imagen 6 */}
-            <motion.div
-              className="col-start-2 row-start-5 overflow-hidden z-10"
-              {...fadeIn(6)}
-            >
-              <img src={images[6]} alt="logistics-7" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div8 - imagen 7 */}
-            <motion.div
-              className="col-start-2 row-start-6 row-span-2 overflow-hidden z-10"
-              {...fadeIn(7)}
-            >
-              <img src={images[7]} alt="logistics-8" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div9 - imagen 8 */}
-            <motion.div
-              className="col-start-2 row-start-8 row-span-2 overflow-hidden z-10"
-              {...fadeIn(8)}
-            >
-              <img src={images[8]} alt="logistics-9" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div10 - imagen 9 */}
-            <motion.div
-              className="col-span-2 col-start-1 row-start-10 overflow-hidden z-10"
-              {...fadeIn(9)}
-            >
-              <img src={images[9]} alt="logistics-10" className="w-full h-full rounded-b-md object-cover" />
-            </motion.div>
-            
-            {/* div11 - imagen 10 */}
-            <motion.div
-              className="col-start-1 row-start-8 row-span-2 overflow-hidden  z-10"
-              {...fadeIn(10)}
-            >
-              <img src={images[10]} alt="logistics-11" className="w-full h-full object-cover" />
-            </motion.div>
+            {images.map((src, i) => (
+              <motion.div
+                key={i}
+                className={`group  ${mobileGridClasses[i]}`}
+                {...fadeIn(i)}
+              >
+                <img 
+                  src={src} 
+                  alt={`logistics-${i + 1}`} 
+                  className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" 
+                />
+              </motion.div>
+            ))}
           </div>
 
           {/* Tablet (sm a lg) - Grid 10x10 con estructura completa */}
           <div className="hidden sm:grid lg:hidden grid-cols-4 grid-rows-10 gap-2 h-full">
-            {/* div1 - imagen 0 */}
-            <motion.div
-              className="col-span-2 row-span-2 overflow-hidden rounded-t-md z-10"
-              {...fadeIn(0)}
-            >
-              <img src={images[0]} alt="logistics-1" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div2 - imagen 1 */}
-            <motion.div
-              className="col-span-2 row-span-2 col-start-3 row-start-2 overflow-hidden rounded-tr-md z-10"
-              {...fadeIn(1)}
-            >
-              <img src={images[1]} alt="logistics-2" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div3 - imagen 2 */}
-            <motion.div
-              className="row-span-3 col-start-3 row-start-4 overflow-hidden  z-10"
-              {...fadeIn(2)}
-            >
-              <img src={images[2]} alt="logistics-3" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div4 - imagen 3 */}
-            <motion.div
-              className="row-span-3 col-start-1 row-start-3 overflow-hidden  z-10"
-              {...fadeIn(3)}
-            >
-              <img src={images[3]} alt="logistics-4" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div5 - imagen 4 */}
-            <motion.div
-              className="row-span-3 col-start-2 rounded-xl row-start-3 overflow-hidden z-10"
-              {...fadeIn(4)}
-            >
-              <img src={images[4]} alt="logistics-5" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div6 - imagen 5 */}
-            <motion.div
-              className="col-span-2 row-span-2  col-start-1 row-start-6 overflow-hidden  z-10"
-              {...fadeIn(5)}
-            >
-              <img src={images[5]} alt="logistics-6" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div7 - imagen 6 */}
-            <motion.div
-              className="row-span-3 col-start-4  row-start-4 overflow-hidden z-10"
-              {...fadeIn(6)}
-            >
-              <img src={images[6]} alt="logistics-7" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div8 - imagen 7 */}
-            <motion.div
-              className="col-span-2 row-span-2 col-start-3 row-start-7 overflow-hidden  z-10"
-              {...fadeIn(7)}
-            >
-              <img src={images[7]} alt="logistics-8" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div9 - imagen 8 */}
-            <motion.div
-              className="row-span-3 col-start-2 row-start-8 overflow-hidden z-10"
-              {...fadeIn(8)}
-            >
-              <img src={images[8]} alt="logistics-9" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div10 - imagen 9 */}
-            <motion.div
-              className="col-span-2 row-span-2 col-start-3 row-start-9 rounded-br-md overflow-hidden z-10"
-              {...fadeIn(9)}
-            >
-              <img src={images[9]} alt="logistics-10" className="w-full h-full object-cover" />
-            </motion.div>
-            
-            {/* div11 - imagen 10 */}
-            <motion.div
-              className="row-span-3 col-start-1 rounded-bl-md row-start-8 overflow-hidden z-10"
-              {...fadeIn(10)}
-            >
-              <img src={images[10]} alt="logistics-11" className="w-full h-full object-cover" />
-            </motion.div>
+            {images.map((src, i) => (
+              <motion.div
+                key={i}
+                className={`group  ${tabletGridClasses[i]}`}
+                {...fadeIn(i)}
+              >
+                <img 
+                  src={src} 
+                  alt={`logistics-${i + 1}`} 
+                  className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" 
+                />
+              </motion.div>
+            ))}
           </div>
 
           {/* Decoración mejorada */}

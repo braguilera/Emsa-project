@@ -21,7 +21,6 @@ function App() {
       <AboutUs/>
       <Certificate/>
       <Clients/>
-      <Testimonies/>
       <News/>
       <Footer/>
     </main>

@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-//import SocialNetworks from '../components/ui/SocialNetworks';
 import Logo from '../assets/nav/Logo.png'
 import SocialNetworks from '../components/utils/SocialNetworks';
-
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +64,7 @@ const Nav = () => {
 
   return (
     <section className={navClass}>
-      <article className="px-4 xl:px-0 py-2 flex items-center justify-between">
+      <article className="px-4 xl:px-0 flex items-center justify-between">
         <a 
           href='#home'
           onClick={(e) => {
@@ -87,8 +85,7 @@ const Nav = () => {
               }}
               className=' w-40 mx-10'
             >
-              {/*<img src={LogoBase} alt='Teich Logo' className='hidden lg:block xl:hidden w-10 hover:scale-[97%] transition-all duration-300'/>*/}
-              <img src={Logo} alt='Teich Logo' className='block lg:hidden xl:block xl:w-40  hover:scale-[97%] transition-all duration-300' />
+              <img src={Logo} alt='Teich Logo' className='pt-2 xl:w-40  hover:scale-[97%] transition-all duration-300' />
             </a>
           </li>
           {navLinks.map((link, index) => (

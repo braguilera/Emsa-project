@@ -40,7 +40,7 @@ const CardServices = ({ service }) => {
 
   return (
     <motion.div
-      className={`group text-center cursor-pointer transition-all duration-300 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs ${
+      className={`group text-center cursor-pointer transition-all duration-300 hover:shadow-xl border border-gray-200 overflow-hidden relative bg-white rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs h-40 ${
         isHovered ? "scale-105 z-10 shadow-2xl" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}
@@ -64,7 +64,7 @@ const CardServices = ({ service }) => {
           <div className="h-1 w-full bg-gradient-to-r from-orange-400 to-orange-500"></div>
 
           {/* Content */}
-          <div className="p-4 sm:p-6 h-40 sm:h-48 md:h-52 lg:h-48 xl:h-44 flex flex-col items-center justify-center text-center">
+          <div className="p-4 sm:p-6  flex flex-col items-center justify-center text-center">
             <motion.div
               className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4 transition-colors duration-300 ${
                 isHovered ? "bg-orange-50" : "bg-gray-100"
@@ -78,7 +78,7 @@ const CardServices = ({ service }) => {
             </motion.div>
 
             <h3
-              className={`font-bold text-xs sm:text-sm md:text-base lg:text-sm xl:text-xs leading-tight transition-colors duration-300 ${
+              className={`font-bold text-xs leading-tight transition-colors duration-300 ${
                 isHovered ? "text-teal-600" : "text-gray-900"
               }`}
             >
@@ -103,7 +103,7 @@ const CardServices = ({ service }) => {
           <div className="p-4  h-full bg-gradient-to-br from-teal-50 to-white flex flex-col justify-between">
             <div>
               <motion.div
-                className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4"
+                className="flex items-center gap-2 sm:gap-3 mb-1"
                 initial={{ x: -20, opacity: 0 }}
                 animate={{ x: isHovered ? 0 : -20, opacity: isHovered ? 1 : 0 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
@@ -119,7 +119,7 @@ const CardServices = ({ service }) => {
               </motion.div>
 
               <motion.h4
-                className="font-bold text-teal-900 text-xs sm:text-sm md:text-base lg:text-sm xl:text-xs leading-tight mb-2 sm:mb-3"
+                className="font-bold text-teal-900 text-xs leading-tight mb-2"
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: isHovered ? 0 : 10, opacity: isHovered ? 1 : 0 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
@@ -128,7 +128,7 @@ const CardServices = ({ service }) => {
               </motion.h4>
 
               <motion.p
-                className="text-xs sm:text-xs md:text-sm lg:text-xs xl:text-xs text-gray-700 leading-relaxed"
+                className="text-xs text-gray-700 leading-relaxed"
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: isHovered ? 0 : 10, opacity: isHovered ? 1 : 0 }}
                 transition={{ duration: 0.3, delay: 0.4 }}
