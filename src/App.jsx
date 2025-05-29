@@ -6,7 +6,6 @@ import Home from './screens/Home'
 import AboutUs from './screens/AboutUs'
 import Certificate from './screens/Certificate'
 import Clients from './screens/Clients'
-import Testimonies from './screens/Testimonies'
 import News from './screens/News'
 import Footer from './screens/Footer'
 

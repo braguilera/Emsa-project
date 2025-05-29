@@ -77,31 +77,89 @@ const tabletGridClasses = [
   'row-span-3 col-start-1 rounded-bl-md row-start-8 overflow-hidden z-10'
 ]
 
+// Animaciones más sutiles y armoniosas
 const fadeIn = (i) => ({
   initial: { opacity: 0, scale: 0.9 },
   animate: { opacity: 1, scale: 1 },
   transition: { duration: 0.4, delay: i * 0.05 }
 })
 
+// Contenedor principal con stagger suave
+const containerVariants = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 0.1
+    }
+  }
+}
+
+// Animación sutil para el texto del artículo
+const articleVariants = {
+  initial: { 
+    opacity: 0, 
+    y: 30
+  },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { 
+      duration: 0.6, 
+      delay: 0.3,
+      ease: [0.25, 0.25, 0.25, 0.75]
+    }
+  }
+}
+
+// Animación suave para la decoración de líneas
+const linesDecoVariants = {
+  initial: { 
+    opacity: 0, 
+    x: -50
+  },
+  animate: { 
+    opacity: 1, 
+    x: 0,
+    transition: { 
+      duration: 0.8, 
+      delay: 0.5,
+      ease: [0.25, 0.25, 0.25, 0.75]
+    }
+  }
+}
+
 const News = () => {
   const { t } = useTranslation('news')
 
   return (
     <section id='news' className="relative h-auto px-4 py-10 text-secondary overflow-hidden">
-      <Title frontText={t('frontTitle')} backgroundText={t('backTitle')} />
-
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <Title backgroundText={t("backTitle")} frontText={t("frontTitle")} />
+      </motion.div>
       {/* Layout principal con grid y contenido */}
-      <div className="mt-10 mx-auto max-w-7xl w-full h-auto  relative">
+      <motion.div 
+        className="mt-10 mx-auto max-w-7xl w-full h-auto relative"
+        variants={containerVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         {/* Grid de imágenes - Desktop */}
         <div className="hidden lg:grid grid-cols-10 grid-rows-10 gap-2 h-auto">
           {images.map((src, i) => (
             <motion.div
               key={i}
-              className={`overflow-hidden z-10 w-full h-full group  ${desktopGridClasses[i]}`}
+              className={`overflow-hidden z-10 w-full h-full group ${desktopGridClasses[i]}`}
               initial={fadeIn(i).initial}
               whileInView={fadeIn(i).animate}
               transition={fadeIn(i).transition}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.3 }}
             >
               <img
                 src={src}
@@ -110,10 +168,15 @@ const News = () => {
               />
             </motion.div>
           ))}
-          <img
+          
+          <motion.img
             src={linesDeco}
             alt="Decoración con líneas"
             className="absolute top-1/2 left-0 w-1/2"
+            variants={linesDecoVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
           />
         </div>
 
@@ -124,8 +187,9 @@ const News = () => {
             {images.map((src, i) => (
               <motion.div
                 key={i}
-                className={`group  ${mobileGridClasses[i]}`}
+                className={`group ${mobileGridClasses[i]}`}
                 {...fadeIn(i)}
+                viewport={{ once: true, amount: 0.2 }}
               >
                 <img 
                   src={src} 
@@ -141,8 +205,9 @@ const News = () => {
             {images.map((src, i) => (
               <motion.div
                 key={i}
-                className={`group  ${tabletGridClasses[i]}`}
+                className={`group ${tabletGridClasses[i]}`}
                 {...fadeIn(i)}
+                viewport={{ once: true, amount: 0.25 }}
               >
                 <img 
                   src={src} 
@@ -153,24 +218,38 @@ const News = () => {
             ))}
           </div>
 
-          {/* Decoración mejorada */}
+          {/* Decoración mejorada con animación */}
           <div className="absolute inset-0 pointer-events-none">
-            <img
+            <motion.img
               src={linesDeco}
               alt="Decoración con líneas"
               className="absolute top-1/2 -left-4 w-1/3 opacity-20 md:opacity-30 transform -translate-y-1/2"
+              variants={linesDecoVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-transparent to-transparent" />
           </div>
         </div>
 
-        {/* Texto + redes en el espacio vacío */}
-        <article className="absolute top-0 right-[1%] sm:right-1/6 lg:top-4 lg:right-1/5 sm p-4 max-w-xs z-10">
-          <h2 className="font-bold text-xs sm:text-lg text-secondary mb-2">{t('text')}</h2>
+        {/* Texto + redes en el espacio vacío con animación */}
+        <motion.article 
+          className="absolute top-0 right-[1%] sm:right-1/6 lg:top-4 lg:right-1/5 p-4 max-w-xs z-10"
+          variants={articleVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <h2 className="font-bold text-xs sm:text-lg text-secondary mb-2">
+            {t('text')}
+          </h2>
+          
           <div className="h-1 w-1/3 bg-secondary mb-3" />
+          
           <SocialNetworks textColor="text-secondary" />
-        </article>
-      </div>
+        </motion.article>
+      </motion.div>
     </section>
   )
 }
