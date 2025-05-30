@@ -14,7 +14,6 @@ const ContactForm = ({ onClose }) => {
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [error, setError] = useState(null);
 
-    //https://formspree.io/f/xeogwley
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,7 +22,7 @@ const ContactForm = ({ onClose }) => {
 
     try {
     
-      const response = await fetch("https://formspree.io/f/meogwolw", {
+      const response = await fetch("https://formspree.io/f/xeokjkno", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +88,7 @@ const ContactForm = ({ onClose }) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder={t("name")}
-            className="w-full p-3 bg-gray-100 rounded-md placeholder:text-secondary text-secondary focus:outline-none focus:ring-2 focus:ring-pink-500"
+            className="w-full p-3 bg-gray-100 rounded-md placeholder:text-secondary text-secondary focus:outline-none focus:ring-2 focus:ring-primary"
             required
           />
         </div>
@@ -102,7 +101,7 @@ const ContactForm = ({ onClose }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="E-mail"
-            className="w-full p-3 placeholder:text-secondary text-secondary  bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+            className="w-full p-3 placeholder:text-secondary text-secondary  bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
             required
           />
         </div>
@@ -115,7 +114,7 @@ const ContactForm = ({ onClose }) => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder={t("phone")}
-            className="w-full p-3 placeholder:text-secondary text-secondary  bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+            className="w-full p-3 placeholder:text-secondary text-secondary  bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
             required
           />
         </div>
@@ -127,7 +126,7 @@ const ContactForm = ({ onClose }) => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder={t("query")}
             rows="4"
-            className="w-full p-3 placeholder:text-secondary text-secondary  bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+            className="w-full p-3 placeholder:text-secondary text-secondary  bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
             required
           />
         </div>
@@ -136,7 +135,7 @@ const ContactForm = ({ onClose }) => {
           <button
             type="submit"
             disabled={loading}
-            className="bg-primary text-white py-2 px-8 rounded-md uppercase font-medium hover:bg-pink-600 transition duration-300 disabled:opacity-50"
+            className="bg-secondary cursor-pointer text-white py-2 px-8 rounded-md uppercase font-medium hover:bg-primary transition duration-300 disabled:opacity-50"
           >
             {loading ? 'Enviando...' : t("button")}
           </button>
