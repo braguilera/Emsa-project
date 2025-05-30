@@ -8,7 +8,7 @@
       "linktitle": "",
       "title": "GESTIÓN INTEGRAL DE ALMACENES (WMS)",
       "img": "gestion_almacen",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -16,7 +16,7 @@
       "linktitle": "",
       "title": "GESTIÓN INTELIGENTE DEL TRANSPORTE (TMS)",
       "img": "gestion_transporte",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -24,7 +24,7 @@
       "linktitle": "",
       "title": "PLANIFICACIÓN Y CONTROL DE FLOTA",
       "img": "planificacion_flota",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -32,7 +32,7 @@
       "linktitle": "",
       "title": "APLICACIONES MÓVILES DE TRAZABILIDAD",
       "img": "trazabilidad_movil",
-      "icon": "Warehouse",
+      "icon": "mdi:track-light",
       "category": "trazabilidad"
     },
     {
@@ -40,7 +40,7 @@
       "linktitle": "",
       "title": "PANELES DE CONTROL PERSONALIZADOS",
       "img": "paneles_control",
-      "icon": "Warehouse",
+      "icon": "mdi:chart-box-outline",
       "category": "reportes"
     },
     {
@@ -48,7 +48,7 @@
       "linktitle": "",
       "title": "ANÁLISIS Y REPORTES INTELIGENTES",
       "img": "analisis_inteligentes",
-      "icon": "Warehouse",
+      "icon": "mdi:chart-box-outline",
       "category": "reportes"
     },
     {
@@ -56,7 +56,7 @@
       "linktitle": "",
       "title": "ALERTA Y NOTIFICACIONES EN TIEMPO REAL",
       "img": "notificaciones_tiempo_real",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -64,7 +64,7 @@
       "linktitle": "",
       "title": "SOFTWARE DE GESTIÓN LOGÍSTICA INTEGRADA POR AL ERP",
       "img": "software_integrado",
-      "icon": "Warehouse",
+      "icon": "mdi:lan-connect",
       "category": "integracion"
     },
     {
@@ -72,7 +72,7 @@
       "linktitle": "",
       "title": "TRAZABILIDAD AVANZADA CON RFID",
       "img": "trazabilidad_rfid",
-      "icon": "Warehouse",
+      "icon": "mdi:track-light",
       "category": "trazabilidad"
     },
     {
@@ -80,7 +80,7 @@
       "linktitle": "QUADRANT",
       "title": "DESARROLLO DE SOFTWARE A MEDIDA",
       "img": "quadrant",
-      "icon": "Warehouse",
+      "icon": "mdi:lan-connect",
       "category": "integracion"
     }
   ]

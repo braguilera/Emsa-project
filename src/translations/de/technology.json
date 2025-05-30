@@ -6,17 +6,17 @@
     {
       "link": "",
       "linktitle": "",
-      "title": "INTEGRIERTES LAGERVERWALTUNGSSYSTEM (WMS)",
+      "title": "INTEGRALES LAGERMANAGEMENT (WMS)",
       "img": "gestion_almacen",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
       "link": "",
       "linktitle": "",
-      "title": "INTELLIGENTE TRANSPORTVERWALTUNG (TMS)",
+      "title": "INTELLIGENTES TRANSPORTMANAGEMENT (TMS)",
       "img": "gestion_transporte",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -24,23 +24,23 @@
       "linktitle": "",
       "title": "FLOTTENPLANUNG UND -KONTROLLE",
       "img": "planificacion_flota",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
       "link": "",
       "linktitle": "",
-      "title": "MOBILE TRACKING-ANWENDUNGEN",
+      "title": "APLICACIONES MÓVILES DE TRAZMOBILE ANWENDUNGEN ZUR RÜCKVERFOLGBARKEITABILIDAD",
       "img": "trazabilidad_movil",
-      "icon": "Warehouse",
+      "icon": "mdi:track-light",
       "category": "trazabilidad"
     },
     {
       "link": "",
       "linktitle": "",
-      "title": "BENUTZERDEFINIERTE DASHBOARDS",
+      "title": "INDIVIDUELL ANGEPASSTE DASHBOARDS",
       "img": "paneles_control",
-      "icon": "Warehouse",
+      "icon": "mdi:chart-box-outline",
       "category": "reportes"
     },
     {
@@ -48,39 +48,39 @@
       "linktitle": "",
       "title": "INTELLIGENTE ANALYSEN UND BERICHTE",
       "img": "analisis_inteligentes",
-      "icon": "Warehouse",
+      "icon": "mdi:chart-box-outline",
       "category": "reportes"
     },
     {
       "link": "",
       "linktitle": "",
-      "title": "ECHTZEITBENACHRICHTIGUNGEN UND ALARME",
+      "title": "ECHTZEIT-ALARM- UND BENACHRICHTIGUNGSSYSTEME",
       "img": "notificaciones_tiempo_real",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
       "link": "",
       "linktitle": "",
-      "title": "LOGISTIKVERWALTUNGSSOFTWARE INTEGRIERT MIT ERP",
+      "title": "INTEGRIERTE LOGISTIKSOFTWARE MIT ERP",
       "img": "software_integrado",
-      "icon": "Warehouse",
+      "icon": "mdi:lan-connect",
       "category": "integracion"
     },
     {
       "link": "",
       "linktitle": "",
-      "title": "ERWEITERTE RFID-TRACKING",
+      "title": "ERWEITERTE RÜCKVERFOLGBARKEIT MIT RFID",
       "img": "trazabilidad_rfid",
-      "icon": "Warehouse",
+      "icon": "mdi:track-light",
       "category": "trazabilidad"
     },
     {
       "link": "https://www.quadrant.com.ar/",
       "linktitle": "QUADRANT",
-      "title": "MASSGESCHNEIDERTE SOFTWAREENTWICKLUNG",
+      "title": "ENTWICKLUNGS-SOFTWARE",
       "img": "quadrant",
-      "icon": "Warehouse",
+      "icon": "mdi:lan-connect",
       "category": "integracion"
     }
   ]

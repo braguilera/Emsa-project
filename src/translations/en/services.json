@@ -6,62 +6,62 @@
         {
             "title": "STORAGE",
             "description": "Warehouses in Buenos Aires City and Northern Greater Buenos Aires",
-            "icon": "Warehouse"
+            "icon": "mdi:warehouse"
         },
         {
             "title": "COMPREHENSIVE TRANSPORTATION. GENERAL CARGO AND IMO CARGO",
             "description": "National reachSmart route planning. Real-time tracking",
-            "icon": "Warehouse"
+            "icon": "mdi:truck-delivery"
         },
         {
             "title": "RETAIL CHANNEL DISTRIBUTION",
             "description": "Route planning I Invoicing and collections I Delivery tracking Reverse logistics I Fleet management",
-            "icon": "Warehouse"
+            "icon": "mdi:truck-fast"
         },
         {
             "title": "WHOLESALE CHANNEL DISTRIBUTION",
             "description": "Cross-docking and/or order preparation from our DCs, with consolidated delivery",
-            "icon": "Warehouse"
+            "icon": "mdi:truck-cargo-container"
         },
         {
             "title": "INVENTORY MANAGEMENT",
             "description": "Real-time stock monitoring FIFO | FEFO | LIFO",
-            "icon": "Warehouse"
+            "icon": "mdi:clipboard-list-outline"
         },
         {
             "title": "ORDER PREPARATION",
             "description": "Picking and packing Deconsolidation and consolidation Retail I Wholesale I E-commerce",
-            "icon": "Warehouse"
+            "icon": "mdi:cart-arrow-down"
         },
         {
             "title": "FULL TRACEABILITY (QR/BARCODE/RFID)",
             "description": "Product labeling for identification and tracking tailored to your needs (QR | Barcodes | RFID)",
-            "icon": "Warehouse"
+            "icon": "mdi:qrcode-scan"
         },
         {
             "title": "DIGITAL DOCUMENT MANAGEMENT",
             "description": "Streamlining of administrative processes and reduction of paper use",
-            "icon": "Warehouse"
+            "icon": "mdi:file-document-outline"
         },
         {
             "title": "TIMELESS",
             "description": "Mobile apps and delivery management systems that optimize routing and ensure on-time deliveries",
-            "icon": "Warehouse"
+            "icon": "mdi:clock-check-outline"
         },
         {
             "title": "TRACKING",
             "description": "Real-time tracking via web platform and mobile apps",
-            "icon": "Warehouse"
+            "icon": "mdi:map-marker-path"
         },
         {
             "title": "FULFILLMENT / E-COMMERCE",
             "description": "Integration with your e-commerce / Door-to-door service",
-            "icon": "Warehouse"
+            "icon": "mdi:cart-variant"
         },
         {
             "title": "NEW PROJECTS AND LOGISTICS OPERATIONS",
             "description": "Development of new operations tailored to your specific needs",
-            "icon": "Warehouse"
+            "icon": "mdi:cog-sync-outline"
         }
     ]
 }

@@ -1,42 +1,9 @@
-"use client"
-
 import { useState } from "react"
 import { motion } from "framer-motion"
-import {
-  Warehouse,
-  Truck,
-  ShoppingCart,
-  Building2,
-  Package,
-  ClipboardList,
-  Scan,
-  FileText,
-  Clock,
-  MapPin,
-  ShoppingBag,
-  Settings,
-} from "lucide-react"
+import { Icon } from "@iconify/react"
 
 const CardServices = ({ service }) => {
   const [isHovered, setIsHovered] = useState(false)
-
-  // Mapeo de iconos por nombre
-  const iconMap = {
-    Warehouse,
-    Truck,
-    ShoppingCart,
-    Building2,
-    Package,
-    ClipboardList,
-    Scan,
-    FileText,
-    Clock,
-    MapPin,
-    ShoppingBag,
-    Settings,
-  }
-
-  const IconComponent = iconMap[service.icon] || Warehouse
 
   return (
     <motion.div
@@ -47,11 +14,11 @@ const CardServices = ({ service }) => {
       onMouseLeave={() => setIsHovered(false)}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5}}
+      transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.05 }}
     >
       <div className="p-0 relative h-full">
-        {/* Default State */}
+        {/* Estado por defecto */}
         <motion.div
           className="transition-all duration-500"
           animate={{
@@ -60,11 +27,9 @@ const CardServices = ({ service }) => {
           }}
           transition={{ duration: 0.5 }}
         >
-          {/* Orange Border */}
           <div className="h-1 w-full bg-gradient-to-r from-orange-400 to-orange-500"></div>
 
-          {/* Content */}
-          <div className="p-4 sm:p-6  flex flex-col items-center justify-center text-center">
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center text-center">
             <motion.div
               className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4 transition-colors duration-300 ${
                 isHovered ? "bg-orange-50" : "bg-gray-100"
@@ -72,8 +37,11 @@ const CardServices = ({ service }) => {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.6 }}
             >
-              <IconComponent
-                className={`w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 transition-colors duration-300 ${isHovered ? "text-orange-500" : "text-gray-600"}`}
+              <Icon
+                icon={service.icon}
+                className={`w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 transition-colors duration-300 ${
+                  isHovered ? "text-orange-500" : "text-gray-600"
+                }`}
               />
             </motion.div>
 
@@ -87,7 +55,7 @@ const CardServices = ({ service }) => {
           </div>
         </motion.div>
 
-        {/* Hover State */}
+        {/* Estado hover */}
         <motion.div
           className="absolute inset-0"
           animate={{
@@ -96,11 +64,9 @@ const CardServices = ({ service }) => {
           }}
           transition={{ duration: 0.5 }}
         >
-          {/* Teal Border for Hover State */}
           <div className="h-1 w-full bg-gradient-to-r from-teal-500 to-teal-600"></div>
 
-          {/* Detailed Content */}
-          <div className="p-4  h-full bg-gradient-to-br from-teal-50 to-white flex flex-col justify-between">
+          <div className="p-4 h-full bg-gradient-to-br from-teal-50 to-white flex flex-col justify-between">
             <div>
               <motion.div
                 className="flex items-center gap-2 sm:gap-3 mb-1"
@@ -109,7 +75,7 @@ const CardServices = ({ service }) => {
                 transition={{ duration: 0.3, delay: 0.2 }}
               >
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-r from-teal-500 to-teal-600 flex items-center justify-center">
-                  <IconComponent className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                  <Icon icon={service.icon} className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <motion.div
                   className="w-2 h-2 bg-orange-400 rounded-full"

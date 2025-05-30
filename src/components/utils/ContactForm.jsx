@@ -23,7 +23,7 @@ const ContactForm = ({ onClose }) => {
 
     try {
     
-      const response = await fetch("", {
+      const response = await fetch("https://formspree.io/f/meogwolw", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,10 +49,10 @@ const ContactForm = ({ onClose }) => {
 
   if (showSuccessPopup) {
     return (
-      <div className="bg-secondary rounded-3xl p-8 relative max-w-xl mx-auto text-center">
+      <div className="bg-secondary rounded-3xl p-8 text-slate-50 relative max-w-xl mx-auto text-center">
         <div className="flex justify-center mb-4">
-          <div className="bg-indigo-900 rounded-full p-2">
-            <CheckCircle className="h-6 w-6 text-white" />
+          <div className="bg-primary rounded-full p-2">
+            <CheckCircle className="h-6 w-6 " />
           </div>
         </div>
         

@@ -1,18 +1,5 @@
 import { useState } from "react"
-import {
-  Warehouse,
-  Truck,
-  ShoppingCart,
-  Building2,
-  Package,
-  ClipboardList,
-  Scan,
-  FileText,
-  Clock,
-  MapPin,
-  ShoppingBag,
-  Settings,
-} from "lucide-react"
+import { Icon } from "@iconify/react"
 import { motion } from "framer-motion"
 import gestion_almacen from "../../assets/technology/gestion_almacen.png"
 import gestion_transporte from "../../assets/technology/gestion_transporte.png"
@@ -25,27 +12,8 @@ import software_integrado from "../../assets/technology/software_integrado.png"
 import trazabilidad_rfid from "../../assets/technology/trazabilidad_rfid.png"
 import quadrant from "../../assets/technology/quadrant.png"
 
-
-
 const CardTechnology = ({ tech }) => {
   const [isHovered, setIsHovered] = useState(false)
-
-  const icons = {
-    Warehouse,
-    Truck,
-    ShoppingCart,
-    Building2,
-    Package,
-    ClipboardList,
-    Scan,
-    FileText,
-    Clock,
-    MapPin,
-    ShoppingBag,
-    Settings,
-  }
-
-  const IconComponent = icons[tech.icon] || Package
 
   const imageMapping = {
   gestion_almacen: gestion_almacen,
@@ -96,9 +64,11 @@ const CardTechnology = ({ tech }) => {
               className={`p-2 rounded-lg ${isHovered ? "bg-orange-100" : "bg-gray-100"}`}
               transition={{ duration: 0.3 }}
             >
-              <IconComponent
+              <Icon
+                icon={tech.icon}
                 className={`w-5 h-5 ${isHovered ? "text-orange-500 scale-110" : "text-gray-600"}`}
               />
+
             </motion.div>
           </div>
 
@@ -114,7 +84,7 @@ const CardTechnology = ({ tech }) => {
 
           <motion.h3
             layout
-            className={`font-bold text-sm leading-tight mb-2 ${isHovered ? "text-teal-600" : "text-gray-900"}`}
+            className={`font-bold text-sm break-words leading-tight mb-2 ${isHovered ? "text-teal-600" : "text-gray-900"}`}
             transition={{ duration: 0.3 }}
           >
             {tech.title}

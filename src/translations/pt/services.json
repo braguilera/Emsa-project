@@ -6,61 +6,63 @@
         {
             "title": "ARMAZENAGEM",
             "description": "Depósitos na cidade de Buenos Aires e na Zona Norte da Província de Buenos Aires",
-            "icon": "Warehouse"
+            "icon": "mdi:warehouse"
         },
         {
             "title": "TRANSPORTE INTEGRAL. CARGAS GERAIS E CARGAS IMO",
             "description": "Cobertura nacional Planejamento inteligente de rotas Acompanhamento em tempo real",
-            "icon": "Warehouse"
+            "icon": "mdi:truck-delivery"
         },
         {
             "title": "DISTRIBUÇÃO PARA CANAL VAREJISTA",
             "description": "Planejamento de rotas Faturamento e cobranças Rastreamento de entregas Logística reversa I Gestão de frota",
-            "icon": "Warehouse"
+            "icon": "mdi:truck-fast"
         },
         {
             "title": "DISTRIBUÇÃO PARA CANAL ATACADISTA",
             "description": "Cross-docking e/ou preparação de pedidos a partir dos nossos CDs, com entrega consolidada",
-            "icon": "Warehouse"
+            "icon": "mdi:truck-cargo-container"
         },
         {
             "title": "GESTÃO DE INVENTÁRIO",
             "description": "Monitoramento em tempo real do seu estoque FIFO | FEFO | LIFO",
-            "icon": "Warehouse"
+            "icon": "mdi:clipboard-list-outline"
         },
         {
             "title": "PREPARAÇÃO DE PEDIDOS",
             "description": "Picking e packing Desconsolidação e consolidação Varejo I Atacado I E-commerce",
-            "icon": "Warehouse"
+            "icon": "mdi:cart-arrow-down"
         },
         {
             "title": "RASTREABILIDADE TOTAL (QR/BARRAS/RFID)",
             "description": "Etiquetagem para identificação e rastreamento da mercadoria conforme suas necessidades (QR | Códigos de barras | RFID)",
-            "icon": "Warehouse"
+            "icon": "mdi:qrcode-scan"
         },
         {
             "title": "GESTÃO DIGITAL DE DOCUMENTAÇÃO",
             "description": "Agilização dos processos administrativos e redução do uso de papel",
-            "icon": "Warehouse"
+            "icon": "mdi:file-document-outline"
         },
         {
             "title": "PONTUALIDADE",
             "description": "Aplicativos móveis e sistemas de gestão de entregas que otimizam rotas e garantem a pontualidade das entregas",
-            "icon": "Warehouse"
+            "icon": "mdi:clock-check-outline"
         },
         {
             "title": "ACOMPANHAMENTO",
             "description": "Acompanhamento em tempo real por meio de plataforma web e aplicativos móveis",
-            "icon": "Warehouse"
+            "icon": "mdi:map-marker-path"
         },
         {
             "title": "FULFILLMENT / E-COMMERCE",
-            "description": "Integração com o seu e-commerce / Serviço porta a porta"
+            "description": "Integração com o seu e-commerce / Serviço porta a porta",
+            "icon": "mdi:cart-variant"
+
         },
         {
             "title": "NOVOS PROJETOS E OPERAÇÕES LOGÍSTICAS",
             "description": "Desenvolvimento de novas operações sob medida para suas necessidades",
-            "icon": "Warehouse"
+            "icon": "mdi:cog-sync-outline"
         }
     ]
 }

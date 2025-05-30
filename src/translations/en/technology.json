@@ -8,7 +8,7 @@
       "linktitle": "",
       "title": "INTEGRATED WAREHOUSE MANAGEMENT SYSTEM (WMS)",
       "img": "gestion_almacen",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -16,7 +16,7 @@
       "linktitle": "",
       "title": "SMART TRANSPORT MANAGEMENT SYSTEM (TMS)",
       "img": "gestion_transporte",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -24,7 +24,7 @@
       "linktitle": "",
       "title": "FLEET PLANNING AND CONTROL",
       "img": "planificacion_flota",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -32,7 +32,7 @@
       "linktitle": "",
       "title": "MOBILE TRACKING APPLICATIONS",
       "img": "trazabilidad_movil",
-      "icon": "Warehouse",
+      "icon": "mdi:track-light",
       "category": "trazabilidad"
     },
     {
@@ -40,7 +40,7 @@
       "linktitle": "",
       "title": "CUSTOM DASHBOARDS",
       "img": "paneles_control",
-      "icon": "Warehouse",
+      "icon": "mdi:chart-box-outline",
       "category": "reportes"
     },
     {
@@ -48,7 +48,7 @@
       "linktitle": "",
       "title": "SMART REPORTS AND ANALYTICS",
       "img": "analisis_inteligentes",
-      "icon": "Warehouse",
+      "icon": "mdi:chart-box-outline",
       "category": "reportes"
     },
     {
@@ -56,7 +56,7 @@
       "linktitle": "",
       "title": "REAL-TIME ALERTS AND NOTIFICATIONS",
       "img": "notificaciones_tiempo_real",
-      "icon": "Warehouse",
+      "icon": "material-symbols:settings-applications",
       "category": "gestion"
     },
     {
@@ -64,7 +64,7 @@
       "linktitle": "",
       "title": "LOGISTICS SOFTWARE INTEGRATED WITH ERP",
       "img": "software_integrado",
-      "icon": "Warehouse",
+      "icon": "mdi:lan-connect",
       "category": "integracion"
     },
     {
@@ -72,7 +72,7 @@
       "linktitle": "",
       "title": "ADVANCED RFID TRACKING",
       "img": "trazabilidad_rfid",
-      "icon": "Warehouse",
+      "icon": "mdi:track-light",
       "category": "trazabilidad"
     },
     {
@@ -80,7 +80,7 @@
       "linktitle": "QUADRANT",
       "title": "CUSTOM SOFTWARE DEVELOPMENT",
       "img": "quadrant",
-      "icon": "Warehouse",
+      "icon": "mdi:lan-connect",
       "category": "integracion"
     }
   ]
