@@ -47,8 +47,8 @@ const CardTechnology = ({ tech }) => {
           transition={{ duration: 0.3 }}
         />
 
-        <div className="p-6">
-          <div className="flex justify-between items-start mb-4">
+        <div className="p-4">
+          <div className="flex justify-between items-center mb-4">
             <motion.span
               layout
               className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
@@ -61,7 +61,7 @@ const CardTechnology = ({ tech }) => {
 
             <motion.div
               layout
-              className={`p-2 rounded-lg ${isHovered ? "bg-orange-100" : "bg-gray-100"}`}
+              className={`p-2 rounded-full ${isHovered ? "bg-orange-100" : "bg-gray-100"}`}
               transition={{ duration: 0.3 }}
             >
               <Icon

@@ -32,7 +32,7 @@
       "linktitle": "",
       "title": "APLICACIONES MÓVILES DE TRAZABILIDAD",
       "img": "trazabilidad_movil",
-      "icon": "mdi:track-light",
+      "icon": "material-symbols:eye-tracking-rounded",
       "category": "trazabilidad"
     },
     {
@@ -72,7 +72,7 @@
       "linktitle": "",
       "title": "TRAZABILIDAD AVANZADA CON RFID",
       "img": "trazabilidad_rfid",
-      "icon": "mdi:track-light",
+      "icon": "material-symbols:eye-tracking-rounded",
       "category": "trazabilidad"
     },
     {
