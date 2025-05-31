@@ -17,7 +17,6 @@ import storage from '../assets/news/storage.png'
 import storage2 from '../assets/news/storage2.png'
 import storage3 from '../assets/news/storage3.png'
 
-// Lista de rutas de imágenes
 const images = [
   truck, 
   storage,
@@ -32,7 +31,6 @@ const images = [
   storage3
 ]
 
-// Grid classes for desktop
 const desktopGridClasses = [
   'col-span-2 row-span-2 rounded-tl-md',
   'col-span-2 row-span-2 col-start-3',
@@ -47,7 +45,6 @@ const desktopGridClasses = [
   'row-span-3 col-start-5 row-start-8 rounded-bl-md'
 ]
 
-// Grid classes for mobile
 const mobileGridClasses = [
   'col-span-1 row-span-1 overflow-hidden rounded-t-md z-10',
   'col-start-2 row-start-2 rounded-tr-md row-span-2 overflow-hidden z-10',
@@ -62,7 +59,6 @@ const mobileGridClasses = [
   'col-start-1 row-start-8 row-span-2 overflow-hidden z-10'
 ]
 
-// Grid classes for tablet
 const tabletGridClasses = [
   'col-span-2 row-span-2 overflow-hidden rounded-t-md z-10',
   'col-span-2 row-span-2 col-start-3 row-start-2 overflow-hidden rounded-tr-md z-10',
@@ -77,14 +73,12 @@ const tabletGridClasses = [
   'row-span-3 col-start-1 rounded-bl-md row-start-8 overflow-hidden z-10'
 ]
 
-// Animaciones más sutiles y armoniosas
 const fadeIn = (i) => ({
   initial: { opacity: 0, scale: 0.9 },
   animate: { opacity: 1, scale: 1 },
   transition: { duration: 0.4, delay: i * 0.05 }
 })
 
-// Contenedor principal con stagger suave
 const containerVariants = {
   initial: {},
   animate: {
@@ -95,7 +89,6 @@ const containerVariants = {
   }
 }
 
-// Animación sutil para el texto del artículo
 const articleVariants = {
   initial: { 
     opacity: 0, 
@@ -112,7 +105,6 @@ const articleVariants = {
   }
 }
 
-// Animación suave para la decoración de líneas
 const linesDecoVariants = {
   initial: { 
     opacity: 0, 
@@ -142,7 +134,6 @@ const News = () => {
       >
         <Title backgroundText={t("backTitle")} frontText={t("frontTitle")} />
       </motion.div>
-      {/* Layout principal con grid y contenido */}
       <motion.div 
         className="mt-10 mx-auto max-w-7xl w-full h-auto relative"
         variants={containerVariants}
@@ -150,7 +141,6 @@ const News = () => {
         whileInView="animate"
         viewport={{ once: true, amount: 0.1 }}
       >
-        {/* Grid de imágenes - Desktop */}
         <div className="hidden lg:grid grid-cols-10 grid-rows-10 gap-2 h-auto">
           {images.map((src, i) => (
             <motion.div
@@ -180,9 +170,7 @@ const News = () => {
           />
         </div>
 
-        {/* Grid de imágenes - Mobile y Tablet con estructura específica */}
         <div className="lg:hidden relative">
-          {/* Mobile (pantallas pequeñas) - Grid 10x10 con 2 columnas efectivas */}
           <div className="sm:hidden grid grid-cols-2 grid-rows-1 gap-2 h-auto">
             {images.map((src, i) => (
               <motion.div
@@ -200,7 +188,6 @@ const News = () => {
             ))}
           </div>
 
-          {/* Tablet (sm a lg) - Grid 10x10 con estructura completa */}
           <div className="hidden sm:grid lg:hidden grid-cols-4 grid-rows-10 gap-2 h-full">
             {images.map((src, i) => (
               <motion.div
@@ -218,7 +205,6 @@ const News = () => {
             ))}
           </div>
 
-          {/* Decoración mejorada con animación */}
           <div className="absolute inset-0 pointer-events-none">
             <motion.img
               src={linesDeco}
@@ -233,7 +219,6 @@ const News = () => {
           </div>
         </div>
 
-        {/* Texto + redes en el espacio vacío con animación */}
         <motion.article 
           className="absolute top-0 right-[1%] sm:right-1/6 lg:top-4 lg:right-1/5 p-4 max-w-xs z-10"
           variants={articleVariants}

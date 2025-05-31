@@ -2,6 +2,8 @@
   "backTitle": "Tecnologia",
   "frontTitle": "Tecnologia Aplicada",
   "description": "Nossas soluções logísticas são impulsionadas por tecnologia de ponta, otimizando cada etapa da cadeia de suprimentos.",
+  "buttonMore":"Ver mais",
+  "buttonLess":"Ver menos",
   "technologies": [
     {
       "link": "",

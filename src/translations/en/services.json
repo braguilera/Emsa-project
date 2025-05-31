@@ -2,6 +2,8 @@
     "backTitle": "Services",
     "frontTitle":"Our Services",
     "description":"We are passionate about logistics... We're here to serve you!",
+    "buttonMore":"See more",
+    "buttonLess":"See less",
     "services": [
         {
             "title": "STORAGE",

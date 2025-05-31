@@ -2,6 +2,8 @@
     "backTitle": "Dienstleistungen",
     "frontTitle":"Unsere Dienstleistungen",
     "description":"Wir lieben Logistik... Wir sind für dich da!",
+    "buttonMore":"Mehr sehen",
+    "buttonLess":"Weniger sehen",
     "services": [
         {
             "title": "LAGERHALTUNG",

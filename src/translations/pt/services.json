@@ -2,6 +2,8 @@
     "backTitle": "Serviços",
     "frontTitle":"Nossos Serviços",
     "description":"Somos apaixonados por logística... Estamos aqui para te atender!",
+    "buttonMore":"Ver mais",
+    "buttonLess":"Ver menos",
     "services": [
         {
             "title": "ARMAZENAGEM",

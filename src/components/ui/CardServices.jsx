@@ -18,7 +18,6 @@ const CardServices = ({ service }) => {
       whileHover={{ scale: 1.05 }}
     >
       <div className="p-0 relative h-full">
-        {/* Estado por defecto */}
         <motion.div
           className="transition-all duration-500"
           animate={{
@@ -55,7 +54,6 @@ const CardServices = ({ service }) => {
           </div>
         </motion.div>
 
-        {/* Estado hover */}
         <motion.div
           className="absolute inset-0"
           animate={{

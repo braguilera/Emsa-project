@@ -2,6 +2,8 @@
   "backTitle": "Technology",
   "frontTitle": "Applied Technology",
   "description": "Our logistics solutions are enhanced with cutting-edge technology, optimizing every stage of the supply chain.",
+  "buttonMore":"See more",
+  "buttonLess":"See less",
   "technologies": [
     {
       "link": "",

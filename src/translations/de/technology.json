@@ -2,6 +2,8 @@
   "backTitle": "Technologie",
   "frontTitle": "Angewandte Technologie",
   "description": "Unsere Logistiklösungen werden durch modernste Technologie unterstützt, um jede Phase der Lieferkette zu optimieren.",
+  "buttonMore":"Mehr sehen",
+  "buttonLess":"Weniger sehen",
   "technologies": [
     {
       "link": "",

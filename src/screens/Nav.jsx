@@ -145,7 +145,7 @@ const Nav = () => {
               exit="exit"
               variants={menuVariants}
             >
-              <header className="flex justify-between items-center">
+              <header className="flex items-center">
                 <a 
                   href='#home'
                   onClick={(e) => {
@@ -153,7 +153,7 @@ const Nav = () => {
                     handleNavLinkClick('#home');
                   }}
                 >
-                  {/*<img src={LogoBase} alt='Teich Logo' className='w-10'/>*/}
+                  <img src={Logo} alt='Teich Logo' className='w-full self-center'/>
                 </a>
                 <button onClick={toggleMenu} className="text-gray-600 focus:outline-none">
                   <X className="h-6 w-6 text-primary" />

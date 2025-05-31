@@ -2,6 +2,8 @@
   "backTitle": "Tecnología",
   "frontTitle": "Tecnología Aplicada",
   "description": "Nuestras soluciones logísticas se potencian con tecnología de vanguardia, optimizando cada etapa de la cadena de suministro.",
+  "buttonMore":"Ver más",
+  "buttonLess":"Ver menos",
   "technologies": [
     {
       "link": "",

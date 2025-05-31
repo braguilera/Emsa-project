@@ -11,7 +11,6 @@ const Technology = () => {
   const technologies = t("technologies", { returnObjects: true })
   const [showAll, setShowAll] = useState(false)
 
-  // Número de items a mostrar inicialmente en mobile
   const INITIAL_ITEMS_MOBILE = 4
   const visibleItems = showAll ? technologies : technologies.slice(0, INITIAL_ITEMS_MOBILE)
   const hasMoreItems = technologies.length > INITIAL_ITEMS_MOBILE
@@ -123,7 +122,6 @@ const Technology = () => {
         />
       </motion.header>
       
-      {/* Article para Mobile y Tablet (grid-cols-1 y grid-cols-2) */}
       <article className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 block lg:hidden">
         <motion.div 
           className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-start justify-items-center"
@@ -149,7 +147,6 @@ const Technology = () => {
           </AnimatePresence>
         </motion.div>
 
-        {/* Botón Show More - Solo para mobile/tablet */}
         {hasMoreItems && (
           <motion.div 
             className="flex justify-center mt-8"
@@ -165,7 +162,7 @@ const Technology = () => {
               whileTap={{ scale: 0.95 }}
             >
               <span>
-                {showAll ? 'Ver menos' : `Ver más (${technologies.length - INITIAL_ITEMS_MOBILE} más)`}
+                {showAll ? t("buttonLess") : `${t("buttonMore")} (${technologies.length - INITIAL_ITEMS_MOBILE})`}
               </span>
               <motion.div
                 animate={{ rotate: showAll ? 180 : 0 }}
@@ -178,7 +175,6 @@ const Technology = () => {
         )}
       </article>
 
-      {/* Article para Desktop (grid-cols-3 en adelante) */}
       <article className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 hidden lg:block">
         <motion.div 
           className="grid lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 items-start justify-items-center"

@@ -93,7 +93,6 @@ const Home = () => {
       id="home" 
       className="relative h-screen w-full flex flex-col items-center justify-center p-4 pt-20 sm:pt-32 sm:px-20 overflow-hidden"
     >
-      {/* Imagen de fondo */}
       <motion.img 
         src={gifEmsa} 
         alt="Fondo EMSA"
@@ -103,7 +102,6 @@ const Home = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
       />
 
-      {/* Overlay oscuro para mejorar contraste del texto */}
       <motion.div 
         className="absolute inset-0 bg-black/60 z-0"
         variants={overlayVariants}
@@ -111,7 +109,6 @@ const Home = () => {
         animate="visible"
       />
 
-      {/* Contenido */}
       <motion.article 
         className="text-center max-w-6xl mx-auto relative z-10"
         variants={containerVariants}
